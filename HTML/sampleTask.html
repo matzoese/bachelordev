@@ -1,0 +1,24 @@
+<!DOCTYPE html><html>
+<head>
+    <script src="Scripts/randomization.js"></script>
+    <script>
+        let currentArray = JSON.parse(sessionStorage.getItem("taskArray"));
+        currentArray.pop();
+        let currentArray_serzialized = JSON.stringify(currentArray);
+        sessionStorage.setItem("taskArray",currentArray_serzialized);
+
+        if(currentArray.length>0){
+            taskSrc = loadTask(currentArray[currentArray.length-1]);
+        }
+        else{
+            console.log("All tasks finished!");
+        }
+        console.log(JSON.parse(sessionStorage.getItem("taskArray")));
+        console.log(taskSrc);
+    </script>
+</head>
+
+<body>
+    <h1>Pool 0 Task 1</h1>
+    <button type ="button" onclick="location.href=taskSrc+'.html'">Next Task<i class='fas fa-angle-right'></i></button>
+</body>
