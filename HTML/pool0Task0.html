@@ -18,33 +18,38 @@
     <!--own script-->
     
     <script src="Scripts/randomization.js"></script>
+    <script src="Scripts/updateTaskArray.js"></script>
     <script>
-        //Initializing variables needed for our tutor, e.g. question file for the given problem
-        
+
+    //Initializing variables needed for our tutor, e.g. question file for the given problem
+       
         var myVars =
         {
             question_file: "../FinalBRDs/pool0task0.brd",
             tutoring_service_communication: "javascript",
         };
-        // The CTAT JavaScript code looks for a ctatOnload() function and executes it automatically if it is defined in our tutor.
+    // The CTAT JavaScript code looks for a ctatOnload() function and executes it automatically if it is defined in our tutor.
 
         function ctatOnload() {
         initTutor(myVars);
         }
-
-        let currentArray = JSON.parse(sessionStorage.getItem("taskArray"));
-        currentArray.pop();
-        let currentArray_serialized = JSON.stringify(currentArray);
-        sessionStorage.setItem("taskArray",currentArray_serialized);
         
-        if(currentArray.length>0){
-            taskSrc = loadTask(currentArray[currentArray.length-1]);
+    //Script for loading the randomized task
+
+        taskLoader();
+
+    //done function which determines what happens when the problem is finished
+
+        function myDoneFunction (msg)
+        { 
+            // Add a problem summary 'msg' xml in case
+            // I need to get more information about how well the student
+            // did
+
+            location.href = taskSrc+".html";
         }
-        else{
-            taskSrc = "tasksFinished";
-        }
-        console.log(JSON.parse(sessionStorage.getItem("taskArray")));
-        console.log(taskSrc);
+
+        
     </script>
     
 
@@ -69,7 +74,7 @@
     </style>
     <!-- Silex HEAD tag do not remove -->
     <!-- End of Silex HEAD tag do not remove -->
-<link rel="stylesheet" href="Assets/pool0Task0-styles.css"></head><body class="body-initial prevent-draggable silex-runtime silex-published">
+<link rel="stylesheet" href="Assets/pool0Task0-styles.css"></head><body class="body-initial prevent-draggable silex-runtime silex-published" onload="CTATCommShell.commShell.assignDoneProcessor(myDoneFunction); ">
     <a id="page-page-1" data-silex-type="page" class="page-element">Page 1</a>
     <div data-silex-id="background-initial" class="background background-initial editable-style container-element prevent-draggable" data-silex-type="container">
         <div data-silex-type="ctat" class="CTATHintWindow editable-style silex-id-1698668228185-3 CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1698668228185-3" id="ctatdiv16" data-ctat-component="CTATHintWindow" onkeypress="return noenter(event)" data-ctat-enabled="true"></div>
@@ -80,10 +85,8 @@
         <div data-silex-type="text" class="CTATTextField editable-style silex-id-1698668625108-9 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1698668625108-9" id="textField2" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">What is the first letter of the alphabet?</div>
         <div data-silex-type="ctat" class="CTATTextInput editable-style CTATComponent silex-id-1698668706716-10 page-page-1 paged-element" data-ctat-tabindex="2" data-silex-id="silex-id-1698668706716-10" id="sampleInput2" data-ctat-component="CTATTextInput" data-ctat-enabled="true"></div>
         <div data-silex-type="text" class="CTATTextField editable-style silex-id-1698668763743-12 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1698668763743-12" id="ctatdiv44" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">1+1=</div>
-        <div data-silex-type="ctat" class="CTATButton editable-style silex-id-1698669075705-13 page-page-1 paged-element CTATComponent" data-ctat-tabindex="4" data-silex-id="silex-id-1698669075705-13" id="ctatdiv47" data-ctat-component="CTATButton" data-ctat-enabled="true" data-ctat-label="Next Task" onclick="location.href=taskSrc+'.html'"></div>
-        <button type ="button" onclick="location.href=taskSrc+'.html'">Start! <i class='fas fa-angle-right'></i></button>
-    </div>
 
+    </div>
 
 
 
