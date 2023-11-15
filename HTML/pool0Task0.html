@@ -19,6 +19,7 @@
     
     <script src="Scripts/randomization.js"></script>
     <script src="Scripts/updateTaskArray.js"></script>
+    <script src="Scripts/logging.js"></script>
     <script>
 
     //Initializing variables needed for our tutor, e.g. question file for the given problem
@@ -28,6 +29,23 @@
             question_file: "../FinalBRDs/pool0task0.brd",
             tutoring_service_communication: "javascript",
         };
+
+    //Defining logging parameters for this task
+
+        CTATConfiguration.set("dataset_level_name1", "Pool0");
+        CTATConfiguration.set("dataset_level_name2", "Task0");
+        CTATConfiguration.set("problem_name", "pool0Task0");
+
+    //Start logging
+   
+        startLogging();
+        /*
+        var loggingLibrary=new CTATLoggingLibrary (true);
+        useDebugging=true;
+	    loggingLibrary.start ();
+        var transactionID=loggingLibrary.logInterfaceAttempt ("textField","UpdateTextField","Hello World");
+        */
+
     // The CTAT JavaScript code looks for a ctatOnload() function and executes it automatically if it is defined in our tutor.
 
         function ctatOnload() {
@@ -48,8 +66,7 @@
 
             location.href = taskSrc+".html";
         }
-
-        
+ 
     </script>
     
 
