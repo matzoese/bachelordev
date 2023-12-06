@@ -1,8 +1,8 @@
 const taskPools = [];
 const tasks = [];
 
-taskPoolAmount = 2; //Amount of task pools with different combinations of class and topic
-taskAmount = 2; //Amount of tasks per task pool
+taskPoolAmount = 1; //Amount of task pools with different combinations of class and topic
+taskAmount = 1; //Amount of tasks per task pool
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);

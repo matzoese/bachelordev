@@ -27,7 +27,7 @@
         var myVars =
         {
             question_file: "../FinalBRDs/pool0task0.brd",
-            tutoring_service_communication: "javascript",
+            tutoring_service_communication: "javascript"
         };
 
     //Defining logging parameters for this task
@@ -36,9 +36,7 @@
         CTATConfiguration.set("dataset_level_name2", "Task0");
         CTATConfiguration.set("problem_name", "pool0Task0");
 
-    //Start logging
-   
-        startLogging();
+    //Start logging 
         /*
         var loggingLibrary=new CTATLoggingLibrary (true);
         useDebugging=true;
@@ -50,6 +48,7 @@
 
         function ctatOnload() {
         initTutor(myVars);
+        startLogging();
         }
         
     //Script for loading the randomized task
