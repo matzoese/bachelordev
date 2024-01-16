@@ -6,7 +6,7 @@
             <verb>SendNoteProperty</verb>
             <properties>
                 <MessageType>StartProblem</MessageType>
-                <ProblemName>taskL1C1</ProblemName>
+                <ProblemName>userInformation</ProblemName>
             </properties>
         </message>
         <message>
@@ -17,43 +17,59 @@
         </message>
     </startNodeMessages>
     <node locked="false" doneState="false">
-        <text>taskL1C1</text>
+        <text>userInformation</text>
         <uniqueID>1</uniqueID>
         <dimension>
-            <x>328</x>
+            <x>324</x>
             <y>30</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state12</text>
-        <uniqueID>13</uniqueID>
+        <text>state1</text>
+        <uniqueID>2</uniqueID>
         <dimension>
-            <x>335</x>
+            <x>357</x>
             <y>140</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state13</text>
-        <uniqueID>14</uniqueID>
+        <text>state2</text>
+        <uniqueID>3</uniqueID>
         <dimension>
-            <x>335</x>
-            <y>250</y>
+            <x>557</x>
+            <y>234</y>
         </dimension>
     </node>
     <node locked="false" doneState="true">
         <text>Done</text>
-        <uniqueID>15</uniqueID>
+        <uniqueID>4</uniqueID>
         <dimension>
-            <x>342</x>
-            <y>360</y>
+            <x>460</x>
+            <y>352</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state15</text>
-        <uniqueID>16</uniqueID>
+        <text>state4</text>
+        <uniqueID>5</uniqueID>
         <dimension>
-            <x>27</x>
-            <y>151</y>
+            <x>147</x>
+            <y>223</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state5</text>
+        <uniqueID>6</uniqueID>
+        <dimension>
+            <x>214</x>
+            <y>344</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="true">
+        <text>Done_2</text>
+        <uniqueID>7</uniqueID>
+        <dimension>
+            <x>209</x>
+            <y>454</y>
         </dimension>
     </node>
     <edge>
@@ -61,28 +77,26 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>21</uniqueID>
+            <uniqueID>1</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>47bce171-e89c-00f7-493e-6cdeede91d97</transaction_id>
+                    <transaction_id>89a6f9ce-e493-9ec9-45df-bd8bdac2c749</transaction_id>
                     <Selection>
-                        <value>textInput1</value>
+                        <value>ctatdiv19</value>
                     </Selection>
                     <Action>
-                        <value>UpdateTextField</value>
+                        <value>UpdateComboBox</value>
                     </Action>
                     <Input>
-                        <value>while</value>
+                        <value>35-44</value>
                     </Input>
                 </properties>
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>Think of a loop, which one fits in here?</hintMessage>
-            <hintMessage>There are while loops and for loops, which one works here?</hintMessage>
-            <hintMessage>Please enter 'while' in the highlighted field.</hintMessage>
+            <hintMessage>Please select '35-44' from the highlighted menu.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -91,19 +105,18 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">textInput1</matcherParameter>
+                        <matcherParameter name="single">ctatdiv19</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                        <matcherParameter name="single">UpdateComboBox</matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
                     <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">while</matcherParameter>
+                        <matcherType>AnyMatcher</matcherType>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -115,7 +128,7 @@
             <indicator>-1</indicator>
         </rule>
         <sourceID>1</sourceID>
-        <destID>13</destID>
+        <destID>2</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -123,28 +136,26 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>23</uniqueID>
+            <uniqueID>3</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>271b394b-92c7-3659-59f3-8acf163991fb</transaction_id>
+                    <transaction_id>d86d0bb5-5fd8-5782-7d0d-64aaddab437a</transaction_id>
                     <Selection>
-                        <value>textInput2</value>
+                        <value>radioButtonGroup</value>
                     </Selection>
                     <Action>
-                        <value>UpdateTextField</value>
+                        <value>UpdateRadioButton</value>
                     </Action>
                     <Input>
-                        <value>:</value>
+                        <value>radio2</value>
                     </Input>
                 </properties>
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>You need to put in one symbol here.</hintMessage>
-            <hintMessage>Which symbol often comes after functions in python?</hintMessage>
-            <hintMessage>Please enter ':' in the highlighted field.</hintMessage>
+            <hintMessage>Please choose among the highlighted radio buttons.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -153,19 +164,19 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">textInput2</matcherParameter>
+                        <matcherParameter name="single">radioButtonGroup</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                        <matcherParameter name="single">UpdateRadioButton</matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
                     <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">:</matcherParameter>
+                        <matcherType>WildcardMatcher</matcherType>
+                        <matcherParameter name="single">radio.*</matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -176,8 +187,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>13</sourceID>
-        <destID>14</destID>
+        <sourceID>2</sourceID>
+        <destID>3</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -185,12 +196,12 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>25</uniqueID>
+            <uniqueID>5</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>56044eb3-f94e-9b33-a5f9-8a92ca54a690</transaction_id>
+                    <transaction_id>bf8d09b7-7422-3dc2-520a-34ef873c2c9a</transaction_id>
                     <Selection>
                         <value>done</value>
                     </Selection>
@@ -236,8 +247,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>14</sourceID>
-        <destID>15</destID>
+        <sourceID>3</sourceID>
+        <destID>4</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -245,47 +256,47 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>27</uniqueID>
+            <uniqueID>10</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>b4fe28d6-042c-e4cc-d62e-34e0e5ab4597</transaction_id>
+                    <transaction_id>0116cd76-0012-0978-1e84-1f5c244b4248</transaction_id>
                     <Selection>
-                        <value>textInput1</value>
+                        <value>radioButtonGroup</value>
                     </Selection>
                     <Action>
-                        <value>UpdateTextField</value>
+                        <value>UpdateRadioButton</value>
                     </Action>
                     <Input>
-                        <value>for</value>
+                        <value>other: </value>
                     </Input>
                 </properties>
             </message>
-            <buggyMessage>This is not correct. Look at the structure of the code, it does not fit the for loop. DO you know any other loop which could work?</buggyMessage>
+            <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>Please enter 'for' in the highlighted field.</hintMessage>
+            <hintMessage>Please choose among the highlighted radio buttons.</hintMessage>
             <callbackFn></callbackFn>
-            <actionType>Buggy Action</actionType>
+            <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
             <checkedStatus>Never Checked</checkedStatus>
             <matchers Concatenation="true">
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">textInput1</matcherParameter>
+                        <matcherParameter name="single">radioButtonGroup</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                        <matcherParameter name="single">UpdateRadioButton</matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">for</matcherParameter>
+                        <matcherParameter name="single">other: </matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -296,8 +307,127 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>1</sourceID>
-        <destID>16</destID>
+        <sourceID>2</sourceID>
+        <destID>5</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>12</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>9ed6abc8-8161-250a-8f81-20106a9c7361</transaction_id>
+                    <Selection>
+                        <value>ctatdiv59</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextField</value>
+                    </Action>
+                    <Input>
+                        <value>blsadij</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please enter 'blsadij' in the highlighted field.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">ctatdiv59</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>AnyMatcher</matcherType>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>5</sourceID>
+        <destID>6</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>14</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>df4049f4-0450-b008-5264-6a9af03ce032</transaction_id>
+                    <Selection>
+                        <value>done</value>
+                    </Selection>
+                    <Action>
+                        <value>ButtonPressed</value>
+                    </Action>
+                    <Input>
+                        <value>-1</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please click on the highlighted button.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">done</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">ButtonPressed</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">-1</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>6</sourceID>
+        <destID>7</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <EdgesGroups ordered="true"></EdgesGroups>

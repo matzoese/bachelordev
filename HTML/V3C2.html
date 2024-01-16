@@ -1,0 +1,233 @@
+<!DOCTYPE html><html><head>    
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.5">
+    <!-- End of generator meta tag -->
+    <!--CSS-->
+    <link data-silex-static="true" href="https://cdn.ctat.cs.cmu.edu/html-editor/css/silex/normalize.css" rel="stylesheet">
+    <link data-silex-static="true" href="https://cdn.ctat.cs.cmu.edu/html-editor/css/silex/front-end.css" rel="stylesheet">
+    <link data-silex-static="true" href="https://cdn.ctat.cs.cmu.edu/releases/current/CTAT.css" rel="stylesheet">
+    <!--JS-->
+    <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/html-editor/js/jquery.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/html-editor/js/jquery-ui.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/current/nools.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/current/ctatloader.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/html-editor/js/ctat/ctat.min.js"></script>
+    
+    
+    <!--own script-->
+    
+    <script src="Scripts/randomization.js"></script>
+    <script src="Scripts/updateTaskArray.js"></script>
+    <script src="Scripts/logging.js"></script>
+    <script>
+
+    //Initializing variables needed for our tutor, e.g. question file for the given problem
+       
+        var myVars =
+        {
+            question_file: "../FinalBRDs/taskV3C2.brd",
+            tutoring_service_communication: "javascript"
+        };
+
+    //Defining logging parameters for this task
+
+        CTATConfiguration.set("dataset_level_name1", "Variables");
+        CTATConfiguration.set("dataset_level_name2", "C2");
+        CTATConfiguration.set("problem_name", "Task V3C2");
+
+    // The CTAT JavaScript code looks for a ctatOnload() function and executes it automatically if it is defined in our tutor.
+
+        function ctatOnload() {
+        initTutor(myVars);
+        startLogging();
+        }
+        
+    //Script for loading the randomized task
+
+        taskLoader();
+
+    //done function which determines what happens when the problem is finished
+
+        function myDoneFunction (msg)
+        { 
+            // Add a problem summary 'msg' xml in case
+            // I need to get more information about how well the student
+            // did
+
+            location.href = taskSrc+".html";
+        }
+ 
+    </script>
+
+    
+
+
+
+    
+    <style type="text/css" class="silex-style"></style>
+    
+    <meta name="interface-id" content="Task V3C2">
+
+    
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+    <style id="current-page-style">
+        .page-page-1{display:inherit; }
+    </style>
+    <!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove -->
+<link rel="stylesheet" href="Assets/Task V3C2-styles.css"></head><body class="body-initial prevent-draggable silex-runtime silex-published" onload="CTATCommShell.commShell.assignDoneProcessor(myDoneFunction);">
+    <a id="page-page-1" data-silex-type="page" class="page-element">Page 1</a>
+    <div data-silex-id="background-initial" class="background background-initial editable-style container-element prevent-draggable" data-silex-type="container">
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1700762156172-0 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1700762156172-0" id="topic" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">Topic: Variables, Level 2</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1700762287371-1 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1700762287371-1" id="task" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">Task V3C2</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1700762391238-2 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1700762391238-2" id="task_text1" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">Given the following code:
+            <br>
+        </div>
+        <div data-silex-type="ctat" class="CTATHintWidget undefined editable-style silex-id-1700762705811-3 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1700762705811-3">
+            <table style="width: 100%; height: 100%;">
+                <tbody>
+                    <tr height="125">
+                        <td>
+                            <div class="CTATHintWindow CTATComponent" id="ctatdiv16" data-ctat-component="CTATHintWindow" onkeypress="return noenter(event)" data-ctat-enabled="true"></div>
+                        </td>
+                        <td width="64" style="padding-top: 0px; padding-bottom: 0px;">
+                            <div id="hint" style="margin-bottom: 2px" class="CTATHintButton CTATComponent" data-ctat-component="CTATHintButton" data-ctat-enabled="true"></div>
+                            <div id="done" class="CTATDoneButton CTATComponent" data-ctat-component="CTATDoneButton" data-ctat-enabled="true"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1700909256620-1 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1700909256620-1" id="task_text2" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">The program tries to print the variable called 'result' but it does not work and provides an error.
+            <br>Check the checkbox for each line where you see at least one error.</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1701080446269-0 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1701080446269-0" id="code1" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">def find_max(n1, n2)
+            <br>
+        </div>
+
+
+
+
+
+
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1701343494055-7 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1701343494055-7" id="code9" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">find_max(34,77)
+            <br>print(result)</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704881431483-0 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704881431483-0" id="ctatdiv26" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">Check the correct code:</div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style silex-id-1704881661189-2 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1704881661189-2" id="correctbox1" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="true" name="correct1"></div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style CTATComponent silex-id-1704881665520-3 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1704881665520-3" id="checkbox2" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="false" data-ctat-show-feedback="false"></div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style CTATComponent silex-id-1704881678044-4 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1704881678044-4" id="checkbox3" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="false" data-ctat-show-feedback="false"></div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style CTATComponent silex-id-1704881679618-5 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1704881679618-5" id="checkbox4" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="false" data-ctat-show-feedback="false"></div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style CTATComponent silex-id-1704881683199-6 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1704881683199-6" id="checkbox5" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="false" data-ctat-show-feedback="false"></div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style CTATComponent silex-id-1704881686789-7 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1704881686789-7" id="ctatdiv45" data-ctat-component="CTATCheckBox" data-ctat-enabled="true"></div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style CTATComponent silex-id-1704881687764-8 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1704881687764-8" id="checkbox6" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="false" data-ctat-show-feedback="false"></div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style CTATComponent silex-id-1704881696627-9 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1704881696627-9" id="checkbox7" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="false" data-ctat-show-feedback="false"></div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style CTATComponent silex-id-1704882102236-0 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1704882102236-0" id="checkbox8" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="false" data-ctat-show-feedback="false"></div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style CTATComponent silex-id-1704882105811-1 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1704882105811-1" id="checkbox9" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="false" data-ctat-show-feedback="false"></div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style CTATComponent silex-id-1704882106655-2 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1704882106655-2" id="checkbox10" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="false" data-ctat-show-feedback="false"></div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style CTATComponent silex-id-1704882108087-3 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1704882108087-3" id="correctbox2" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="true" name="correct2"></div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style CTATComponent silex-id-1704882110746-4 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1704882110746-4" id="correctbox3" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="true" name="correct3"></div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882420273-5 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882420273-5" id="code10" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">def find_max(n1, n2):</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882473332-7 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882473332-7" id="code18" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">result = find_max(34,77)
+            <br>print(result)</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882555750-10 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882555750-10" id="code27" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">print(find_max(34,77))</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882624279-11 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882624279-11" id="code19" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">def find_max(n1, n2)</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882665218-12 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882665218-12" id="code20" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">if n1 &gt; n2:
+            <br>
+        </div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882745599-13 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882745599-13" id="code21" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">result = n1</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882765393-14 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882765393-14" id="code22" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">if n2 &gt; n1:</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882782389-15 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882782389-15" id="code23" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">result = n2</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882794142-16 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882794142-16" id="code24" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">else:</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882813841-17 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882813841-17" id="code25" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">result = n1</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882833855-18 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882833855-18" id="code26" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">return result</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882860685-19 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882860685-19" id="code2" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">num 1 = n1
+            <br>num 2 = n2
+            <br>
+            <br>if num1 &gt; num2:</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882896634-20 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882896634-20" id="code3" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">result = num1</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882907995-21 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882907995-21" id="code4" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">elif num2 &gt; num1:</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882930253-22 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882930253-22" id="code5" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">result = num2</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882945364-23 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882945364-23" id="code6" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">else:</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882964507-24 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882964507-24" id="code7" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">result = num1</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1704882983471-25 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1704882983471-25" id="code8" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">return result</div>
+        <div data-silex-type="text" class="CTATTextField editable-style text-element CTATComponent silex-id-1704883009343-26 page-page-1 paged-element" data-silex-id="silex-id-1704883009343-26" id="code11" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">num 1 = n1
+            <br>num 2 = n2
+            <br>
+            <br>if num1 &gt; num2:</div>
+        <div data-silex-type="text" class="CTATTextField editable-style text-element CTATComponent silex-id-1704883013416-27 page-page-1 paged-element" data-silex-id="silex-id-1704883013416-27" id="code12" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">result = num1</div>
+        <div data-silex-type="text" class="CTATTextField editable-style text-element CTATComponent silex-id-1704883016705-28 page-page-1 paged-element" data-silex-id="silex-id-1704883016705-28" id="code13" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">elif num2 &gt; num1:</div>
+        <div data-silex-type="text" class="CTATTextField editable-style text-element CTATComponent silex-id-1704883019239-29 page-page-1 paged-element" data-silex-id="silex-id-1704883019239-29" id="code14" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">result = num2</div>
+        <div data-silex-type="text" class="CTATTextField editable-style text-element CTATComponent silex-id-1704883021894-30 page-page-1 paged-element" data-silex-id="silex-id-1704883021894-30" id="code15" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">else:</div>
+        <div data-silex-type="text" class="CTATTextField editable-style text-element CTATComponent silex-id-1704883026594-31 page-page-1 paged-element" data-silex-id="silex-id-1704883026594-31" id="code16" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">result = num1</div>
+        <div data-silex-type="text" class="CTATTextField editable-style text-element CTATComponent silex-id-1704883030480-32 page-page-1 paged-element" data-silex-id="silex-id-1704883030480-32" id="code17" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">return result</div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style silex-id-1704883066436-33 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1704883066436-33" id="correctbox4" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="true" name="correct4"></div>
+        <div data-silex-type="ctat" class="CTATCheckBox editable-style CTATComponent silex-id-1704883078055-34 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1704883078055-34" id="checkbox14" data-ctat-component="CTATCheckBox" data-ctat-enabled="true" data-ctat-disable-on-correct="false" data-ctat-show-feedback="false"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

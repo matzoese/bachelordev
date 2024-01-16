@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="Scripts/randomization.js"></script>
+    <title>Consent Form</title>
+
+    <script>
+        //Generate task array instance and store it in session storage
+        let taskArray = generateTaskBatch();
+        let taskArray_serialized = JSON.stringify(taskArray);
+
+        sessionStorage.setItem("taskArray",taskArray_serialized);
+        let taskArray_deserialized = JSON.parse(sessionStorage.getItem("taskArray"));
+
+        console.log("task array deserialized:",taskArray_deserialized);
+        
+        //load first task from task array
+        taskSrc = loadTask(taskArray_deserialized[taskArray_deserialized.length-1]);
+    </script>
+</head>
+
+<body>
+    <div class ="wrapper">
+        <h1>First, we need a little information.</h1>
+        <form id="form">
+            <div class ="question-wrapper">
+                <label for="age" font-size= 100px>How old are you?</label><br>
+            </div>
+            <div class="custom-select">
+                <select id="age" name="age" required>
+                    <option value="under 18">under 18</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45-54">45-54</option>
+                    <option value="55-64">55-64</option>
+                    <option value="above 64">above 64</option>
+                </select><br>
+            </div>
+            <div class ="question-wrapper">
+                <label>What is your gender?</label><br>
+            </div>
+            <div class="custom-radio">
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">female</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">male</label><br>
+                <input type="radio" id="non-binary" name="gender" value="non-binary">
+                <label for="non-binary">non-binary</label><br>
+                <input type="radio" id="preferNotToSay" name="gender" value="prefer not to say">
+                <label for="preferNotToSay">prefer not to say</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other:</label>
+                <input type="text" id="otherInput" name="otherInput"><br>
+            </div>
+            <div class="b">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        
+        <div class="b">
+            <button type ="button" onclick="location.href='HTML/'+taskSrc+'.html'">Start! <i class='fas fa-angle-right'></i></button>
+        </div>
+    </div>
+</body>
+
+<script>
+    var form = document.getElementById("form")
+
+    form.addEventListener("submit",function(event){
+        event.preventDefault()
+        var age = document.getElementById("age").value
+        console.log(age)
+        var gender = document.getElementsByName("gender").value
+        console.log(gender)
+    })
+</script>
+</html>

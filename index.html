@@ -8,30 +8,17 @@
     <script src="HTML/Scripts/randomization.js"></script>
     <title>Home</title>
 
-    <script>
-        //Generate task array instance and store it in session storage
-        let taskArray = generateTaskBatch();
-        let taskArray_serialized = JSON.stringify(taskArray);
-
-        sessionStorage.setItem("taskArray",taskArray_serialized);
-        let taskArray_deserialized = JSON.parse(sessionStorage.getItem("taskArray"));
-
-        console.log("task array deserialized:",taskArray_deserialized);
-        
-        //load first task from task array
-        taskSrc = loadTask(taskArray_deserialized[taskArray_deserialized.length-1]);
-    </script>
 </head>
 
 <body>
     <div class ="wrapper">
-        <h1>Bachelor Thesis: Example Traced Tutor by Matthias Stas</h1>
+        <h1>Example Traced Tutor for Python</h1>
         <p>
-            This is a website where you as a student will be asked to solve multiple computer science related tasks. Those tasks will be chosen randomly, so each student will have a unique experience. 
-            There will be 3 different topics and for each topic 3 different difficulty classes, resulting in 9 task pools which contain 3 tasks each. You need to solve 9 tasks, one from each task pool.   
+            This is a website where you as a student will be asked to solve multiple computer science related tasks.
+            You need to solve 4 tasks, one from each task pool.       
         </p>
         <div class="b">
-            <button type ="button" onclick="location.href='HTML/'+taskSrc+'.html'">Start! <i class='fas fa-angle-right'></i></button>
+            <button type ="button" onclick="location.href='HTML/userInformation.html'">Start! <i class='fas fa-angle-right'></i></button>
         </div>
     </div>
 </body>

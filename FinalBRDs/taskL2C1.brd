@@ -6,7 +6,7 @@
             <verb>SendNoteProperty</verb>
             <properties>
                 <MessageType>StartProblem</MessageType>
-                <ProblemName>taskL1C1</ProblemName>
+                <ProblemName>taskL2C1</ProblemName>
             </properties>
         </message>
         <message>
@@ -17,43 +17,51 @@
         </message>
     </startNodeMessages>
     <node locked="false" doneState="false">
-        <text>taskL1C1</text>
+        <text>taskL2C1</text>
         <uniqueID>1</uniqueID>
         <dimension>
-            <x>328</x>
+            <x>346</x>
             <y>30</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state12</text>
-        <uniqueID>13</uniqueID>
+        <text>state1</text>
+        <uniqueID>2</uniqueID>
         <dimension>
-            <x>335</x>
+            <x>357</x>
             <y>140</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state13</text>
-        <uniqueID>14</uniqueID>
+        <text>state2</text>
+        <uniqueID>3</uniqueID>
         <dimension>
-            <x>335</x>
+            <x>357</x>
             <y>250</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state3</text>
+        <uniqueID>4</uniqueID>
+        <dimension>
+            <x>357</x>
+            <y>360</y>
         </dimension>
     </node>
     <node locked="false" doneState="true">
         <text>Done</text>
-        <uniqueID>15</uniqueID>
+        <uniqueID>5</uniqueID>
         <dimension>
-            <x>342</x>
-            <y>360</y>
+            <x>360</x>
+            <y>470</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state15</text>
-        <uniqueID>16</uniqueID>
+        <text>state5</text>
+        <uniqueID>6</uniqueID>
         <dimension>
-            <x>27</x>
-            <y>151</y>
+            <x>59</x>
+            <y>131</y>
         </dimension>
     </node>
     <edge>
@@ -61,12 +69,12 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>21</uniqueID>
+            <uniqueID>1</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>47bce171-e89c-00f7-493e-6cdeede91d97</transaction_id>
+                    <transaction_id>91a8d6b1-1535-bb33-5ff8-3f652d8f7dc9</transaction_id>
                     <Selection>
                         <value>textInput1</value>
                     </Selection>
@@ -74,15 +82,15 @@
                         <value>UpdateTextField</value>
                     </Action>
                     <Input>
-                        <value>while</value>
+                        <value>for</value>
                     </Input>
                 </properties>
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>Think of a loop, which one fits in here?</hintMessage>
-            <hintMessage>There are while loops and for loops, which one works here?</hintMessage>
-            <hintMessage>Please enter 'while' in the highlighted field.</hintMessage>
+            <hintMessage>Which loop types do you know? Try putting it here.</hintMessage>
+            <hintMessage>Do you think a while loop or a for loop is more suitable in this context?</hintMessage>
+            <hintMessage>Please enter 'for' in the highlighted field.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -103,7 +111,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">while</matcherParameter>
+                        <matcherParameter name="single">for</matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -115,7 +123,7 @@
             <indicator>-1</indicator>
         </rule>
         <sourceID>1</sourceID>
-        <destID>13</destID>
+        <destID>2</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -123,14 +131,76 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>23</uniqueID>
+            <uniqueID>3</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>271b394b-92c7-3659-59f3-8acf163991fb</transaction_id>
+                    <transaction_id>d5783596-25b3-e0f5-c2b2-845d31456dbc</transaction_id>
                     <Selection>
                         <value>textInput2</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextField</value>
+                    </Action>
+                    <Input>
+                        <value>in</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Which keyword do you need to put in a for loop before the array?</hintMessage>
+            <hintMessage>You want to loop for each item of the array.</hintMessage>
+            <hintMessage>Please enter 'in' in the highlighted field.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">textInput2</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">in</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>2</sourceID>
+        <destID>3</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>5</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>0d394711-a6bc-6148-6886-06bde77ec942</transaction_id>
+                    <Selection>
+                        <value>textInput3</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -142,8 +212,7 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>You need to put in one symbol here.</hintMessage>
-            <hintMessage>Which symbol often comes after functions in python?</hintMessage>
+            <hintMessage>How do you end loop statements or functions in python?</hintMessage>
             <hintMessage>Please enter ':' in the highlighted field.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
@@ -153,7 +222,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">textInput2</matcherParameter>
+                        <matcherParameter name="single">textInput3</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -176,8 +245,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>13</sourceID>
-        <destID>14</destID>
+        <sourceID>3</sourceID>
+        <destID>4</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -185,12 +254,12 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>25</uniqueID>
+            <uniqueID>7</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>56044eb3-f94e-9b33-a5f9-8a92ca54a690</transaction_id>
+                    <transaction_id>c1f330fc-492a-26c7-3945-263167e0c959</transaction_id>
                     <Selection>
                         <value>done</value>
                     </Selection>
@@ -236,8 +305,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>14</sourceID>
-        <destID>15</destID>
+        <sourceID>4</sourceID>
+        <destID>5</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -245,12 +314,12 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>27</uniqueID>
+            <uniqueID>9</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>b4fe28d6-042c-e4cc-d62e-34e0e5ab4597</transaction_id>
+                    <transaction_id>2bb14b6d-e83f-40f7-1413-166c932feab1</transaction_id>
                     <Selection>
                         <value>textInput1</value>
                     </Selection>
@@ -258,13 +327,13 @@
                         <value>UpdateTextField</value>
                     </Action>
                     <Input>
-                        <value>for</value>
+                        <value>while</value>
                     </Input>
                 </properties>
             </message>
-            <buggyMessage>This is not correct. Look at the structure of the code, it does not fit the for loop. DO you know any other loop which could work?</buggyMessage>
+            <buggyMessage>This is not correct. Look at the structure of the code. A while loop needs a comparison value, which in our case would be the array. That would not make sense. Think of another loop.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>Please enter 'for' in the highlighted field.</hintMessage>
+            <hintMessage>Please enter 'while' in the highlighted field.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Buggy Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -285,7 +354,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">for</matcherParameter>
+                        <matcherParameter name="single">while</matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -297,7 +366,7 @@
             <indicator>-1</indicator>
         </rule>
         <sourceID>1</sourceID>
-        <destID>16</destID>
+        <destID>6</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <EdgesGroups ordered="true"></EdgesGroups>
