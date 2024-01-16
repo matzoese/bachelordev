@@ -58,7 +58,7 @@ console.log(generateTaskBatch());
 
 //This one is trying to generate the exact task names directly, much work for not a lot of reward tbh.
 const topics = ['L','V'];
-const difficulties = 1;
+const difficulties = 2;
 const taskPools = [];
 const randomizedTasks = [];
 const taskAmount = topics.length*difficulties;
