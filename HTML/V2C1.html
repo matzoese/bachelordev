@@ -15,51 +15,50 @@
     <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/current/ctatloader.js"></script>
     <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/html-editor/js/ctat/ctat.min.js"></script>
     
-    
     <!--own script-->
     
-    <script src="Scripts/randomization.js"></script>
-    <script src="Scripts/updateTaskArray.js"></script>
-    <script src="Scripts/logging.js"></script>
-    <script>
+<script src="Scripts/randomization.js"></script>
+<script src="Scripts/updateTaskArray.js"></script>
+<script src="Scripts/logging.js"></script>
+<script>
 
-    //Initializing variables needed for our tutor, e.g. question file for the given problem
+//Initializing variables needed for our tutor, e.g. question file for the given problem
        
-        var myVars =
-        {
-            question_file: "../FinalBRDs/taskV2C1.brd",
-            tutoring_service_communication: "javascript"
-        };
+    var myVars =
+    {
+        question_file: "../FinalBRDs/taskV2C1.brd",
+        tutoring_service_communication: "javascript"
+    };
 
-    //Defining logging parameters for this task
+//Defining logging parameters for this task
 
-        CTATConfiguration.set("dataset_level_name1", "Variables");
-        CTATConfiguration.set("dataset_level_name2", "C1");
-        CTATConfiguration.set("problem_name", "Task V2C1");
+    CTATConfiguration.set("dataset_level_name1", "Variables");
+    CTATConfiguration.set("dataset_level_name2", "Level 1");
+    CTATConfiguration.set("problem_name", "V2C1");
 
-    // The CTAT JavaScript code looks for a ctatOnload() function and executes it automatically if it is defined in our tutor.
+// The CTAT JavaScript code looks for a ctatOnload() function and executes it automatically if it is defined in our tutor.
 
-        function ctatOnload() {
-        initTutor(myVars);
-        startLogging();
-        }
+    function ctatOnload() {
+    initTutor(myVars);
+    startLogging();
+    }
         
-    //Script for loading the randomized task
+//Script for loading the randomized task
 
-        taskLoader();
+    taskLoader();
 
-    //done function which determines what happens when the problem is finished
+//done function which determines what happens when the problem is finished
 
-        function myDoneFunction (msg)
-        { 
-            // Add a problem summary 'msg' xml in case
-            // I need to get more information about how well the student
-            // did
+    function myDoneFunction (msg)
+    { 
+        // Add a problem summary 'msg' xml in case
+        // I need to get more information about how well the student did
 
-            location.href = taskSrc+".html";
-        }
- 
-    </script>
+        location.href = taskSrc+".html";
+    }
+
+</script>
+    
 
     
 
@@ -68,7 +67,7 @@
     
     <style type="text/css" class="silex-style"></style>
     
-    <meta name="interface-id" content="Task V2C1">
+    <meta name="interface-id" content="V2C1">
 
     
 
@@ -84,6 +83,37 @@
     
 
     
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+
+    
+
+
+    
+
+
+    
+
 
     
     <style id="current-page-style">
@@ -91,14 +121,12 @@
     </style>
     <!-- Silex HEAD tag do not remove -->
     <!-- End of Silex HEAD tag do not remove -->
-<link rel="stylesheet" href="Assets/Task V2C1-styles.css"></head><body class="body-initial prevent-draggable silex-runtime silex-published" onload="CTATCommShell.commShell.assignDoneProcessor(myDoneFunction);">
+<link rel="stylesheet" href="Assets/V2C1-styles.css"></head><body class="body-initial prevent-draggable silex-runtime silex-published" onload="CTATCommShell.commShell.assignDoneProcessor(myDoneFunction);">
     <a id="page-page-1" data-silex-type="page" class="page-element">Page 1</a>
     <div data-silex-id="background-initial" class="background background-initial editable-style container-element prevent-draggable" data-silex-type="container">
-        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1700762156172-0 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1700762156172-0" id="topic" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">Topic: Variables, Level 1</div>
-        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1700762287371-1 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1700762287371-1" id="task" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">Task V2C1</div>
-        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1700762391238-2 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1700762391238-2" id="task_text1" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">Given the following code:
-            <br>
-        </div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1700762156172-0 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1700762156172-0" id="topic" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">Variables, Level 1: V2C1</div>
+
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1700762391238-2 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1700762391238-2" id="task_text1" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">Given the following code:</div>
         <div data-silex-type="ctat" class="CTATHintWidget undefined editable-style silex-id-1700762705811-3 page-page-1 paged-element" data-ctat-tabindex="1" data-silex-id="silex-id-1700762705811-3">
             <table style="width: 100%; height: 100%;">
                 <tbody>
@@ -114,18 +142,61 @@
                 </tbody>
             </table>
         </div>
-        <div data-silex-type="ctat" class="CTATTextArea editable-style silex-id-1700815549932-0 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1700815549932-0" id="answerField" data-ctat-component="CTATTextArea" data-ctat-enabled="true"></div>
-
-        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1700909256620-1 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1700909256620-1" id="task_text2" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">What is the output?</div>
-        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1701080446269-0 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1701080446269-0" id="code1" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">a = 100
-            <br>
-        </div>
-        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1701080525797-1 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1701080525797-1" id="code2" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">a = 20</div>
-
-        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1701080604237-3 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1701080604237-3" id="code3" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">print('a')</div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1706518497426-0 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1706518497426-0" id="heading" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">Python Tutor: Test your Python Skills!</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1706518582692-1 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1706518582692-1" id="progress" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">You have x tasks left.</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1706695481280-5 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1706695481280-5" id="code1" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">a = 100</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1706695492213-6 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1706695492213-6" id="code2" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">a = 20</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1706695501875-7 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1706695501875-7" id="code3" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">print('a')</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1706695519535-8 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1706695519535-8" id="task_text2" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">What is the output? Enter below:</div>
+        <div data-silex-type="ctat" class="CTATTextInput editable-style silex-id-1706695545008-9 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1706695545008-9" id="input1" data-ctat-component="CTATTextInput" data-ctat-enabled="true"></div>
     </div>
+
+<script>
+    // update progress bar
+    let taskArray_deserialized = JSON.parse(sessionStorage.getItem("taskArray"));
+
+    if(taskArray_deserialized.length>1){
+        document.getElementById("progress").innerHTML = "You have "+taskArray_deserialized.length+" more tasks left";
+    }else if(taskArray_deserialized.length==1){
+        document.getElementById("progress").innerHTML = "You have "+taskArray_deserialized.length+" more task left";
+    }   
+    else{
+        document.getElementById("progress").innerHTML = "This is your last task!";
+    } 
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

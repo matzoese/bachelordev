@@ -7,7 +7,7 @@ CTATConfiguration.set("dataset_level_type1", "pool");
 CTATConfiguration.set("dataset_level_type2", "task");
 CTATConfiguration.set("user_guid", "student1");
 
-CTATConfiguration.set("log_service_url","http://192.168.2.100:20080/data.log");
+CTATConfiguration.set("log_service_url","data.log");
 
 /*
 CTATConfiguration.set("auth_token", "authtoken1");
@@ -18,7 +18,7 @@ CTATConfiguration.set("class_name", "22-512");
 
 function startLogging(){
   var loggingLibrary= CTATCommShell.commShell.getLoggingLibrary();
-  useDebugging=true;
+  //useDebugging=true;
 	loggingLibrary.start ();
 
   loggingLibrary.assignLogListener (function logListener (aMessage)

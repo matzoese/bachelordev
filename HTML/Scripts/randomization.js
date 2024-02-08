@@ -56,13 +56,13 @@ function loadTask([a,b]){
 console.log(generateTaskBatch());
 */
 
-//This one is trying to generate the exact task names directly, much work for not a lot of reward tbh.
-const topics = ['L','V'];
+//Generate the file names directly
+const topics = ['L'];
 const difficulties = 2;
 const taskPools = [];
 const randomizedTasks = [];
-const taskAmount = topics.length*difficulties;
-const tasksPerPool = 2; //Amount of tasks per task pool
+const taskAmount = topics.length*difficulties; //amount of tasks to cover every task pool
+const tasksPerPool = 1; //Amount of tasks per task pool
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max)
