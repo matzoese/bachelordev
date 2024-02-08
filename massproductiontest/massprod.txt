@@ -1,5 +1,0 @@
-Problem Name	Task V1C1	Task V2C1	Task V3C1
-%(topic)%	Topic: Variables, Level 1	Topic: Variables, Level 1	Topic: Variables, Level 1
-%(task_short)%	Task V1C1	Task V2C1	Task V3C1
-%(code)%	a = 100 _TAB_ a = 20 _TAB_ print(a)	a = 100 _TAB_ a = 20 _TAB_ print(‘a‘)	a = 100 _TAB_ a = a+1 _TAB_ print(a)
-%(output)%	20	a	101
