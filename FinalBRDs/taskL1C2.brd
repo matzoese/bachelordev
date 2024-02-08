@@ -20,88 +20,80 @@
         <text>taskL1C2</text>
         <uniqueID>1</uniqueID>
         <dimension>
-            <x>346</x>
-            <y>30</y>
+            <x>348</x>
+            <y>50</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state1</text>
-        <uniqueID>2</uniqueID>
+        <text>state16</text>
+        <uniqueID>17</uniqueID>
         <dimension>
-            <x>357</x>
-            <y>140</y>
+            <x>354</x>
+            <y>150</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state2</text>
-        <uniqueID>3</uniqueID>
+        <text>state17</text>
+        <uniqueID>18</uniqueID>
         <dimension>
-            <x>357</x>
-            <y>250</y>
+            <x>354</x>
+            <y>260</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state3</text>
-        <uniqueID>4</uniqueID>
+        <text>state18</text>
+        <uniqueID>19</uniqueID>
         <dimension>
-            <x>357</x>
-            <y>360</y>
+            <x>354</x>
+            <y>370</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state4</text>
-        <uniqueID>5</uniqueID>
+        <text>state19</text>
+        <uniqueID>20</uniqueID>
         <dimension>
-            <x>357</x>
-            <y>470</y>
+            <x>354</x>
+            <y>480</y>
         </dimension>
     </node>
     <node locked="false" doneState="true">
         <text>Done</text>
-        <uniqueID>6</uniqueID>
+        <uniqueID>21</uniqueID>
         <dimension>
-            <x>360</x>
-            <y>580</y>
+            <x>361</x>
+            <y>590</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state6</text>
-        <uniqueID>7</uniqueID>
+        <text>state21</text>
+        <uniqueID>22</uniqueID>
         <dimension>
-            <x>65</x>
-            <y>137</y>
+            <x>148</x>
+            <y>107</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state7</text>
-        <uniqueID>8</uniqueID>
+        <text>state22</text>
+        <uniqueID>23</uniqueID>
         <dimension>
-            <x>63</x>
-            <y>353</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state8</text>
-        <uniqueID>9</uniqueID>
-        <dimension>
-            <x>-3</x>
-            <y>471</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state9</text>
-        <uniqueID>10</uniqueID>
-        <dimension>
-            <x>635</x>
-            <y>426</y>
+            <x>98</x>
+            <y>441</y>
         </dimension>
     </node>
     <node locked="false" doneState="true">
         <text>Done_2</text>
-        <uniqueID>11</uniqueID>
+        <uniqueID>24</uniqueID>
         <dimension>
-            <x>428</x>
-            <y>575</y>
+            <x>126</x>
+            <y>574</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state24</text>
+        <uniqueID>25</uniqueID>
+        <dimension>
+            <x>651</x>
+            <y>470</y>
         </dimension>
     </node>
     <edge>
@@ -109,14 +101,14 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>1</uniqueID>
+            <uniqueID>31</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>964ced57-f12e-0af4-2efc-1f7896a76711</transaction_id>
+                    <transaction_id>03a57f42-c529-2ac7-edc7-b7e42ed35e5e</transaction_id>
                     <Selection>
-                        <value>userInput1</value>
+                        <value>input1</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -128,8 +120,8 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>Which comparison operator would fit here?</hintMessage>
-            <hintMessage>The numbers you want to print out go from 2 to 10. Are they all smaller, smaller or equal, greater or equal or greater than 10?</hintMessage>
+            <hintMessage>In this field you want to compare your current iteration step to the value 10. Which comparison operator would fit in here?</hintMessage>
+            <hintMessage>How could you print out all values equal to or lower than 10?</hintMessage>
             <hintMessage>Please enter '&lt;=' in the highlighted field.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
@@ -139,7 +131,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput1</matcherParameter>
+                        <matcherParameter name="single">input1</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -163,7 +155,7 @@
             <indicator>-1</indicator>
         </rule>
         <sourceID>1</sourceID>
-        <destID>2</destID>
+        <destID>17</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -171,14 +163,14 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>3</uniqueID>
+            <uniqueID>33</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>235db566-7dcd-d010-0d66-fc370d6638d7</transaction_id>
+                    <transaction_id>fe12c8a0-53f9-fc49-f204-695154e8e90f</transaction_id>
                     <Selection>
-                        <value>userInput2</value>
+                        <value>input2</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -190,8 +182,8 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>In this step you want to print out the number in each iteration.</hintMessage>
-            <hintMessage>Which variable contains the number of the current iteration?</hintMessage>
+            <hintMessage>Here you want to insert the value that you want to print out in each iteration.</hintMessage>
+            <hintMessage>Which variable contains the value that we want to print out?</hintMessage>
             <hintMessage>Please enter 'i' in the highlighted field.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
@@ -201,7 +193,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput2</matcherParameter>
+                        <matcherParameter name="single">input2</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -224,8 +216,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>2</sourceID>
-        <destID>3</destID>
+        <sourceID>17</sourceID>
+        <destID>18</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -233,14 +225,14 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>5</uniqueID>
+            <uniqueID>35</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>d2f37449-f14f-0c66-e7d6-e15c0a93ac1d</transaction_id>
+                    <transaction_id>84b35d0d-7c7e-f788-fa5a-8416e0d03891</transaction_id>
                     <Selection>
-                        <value>userInput3</value>
+                        <value>input3</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -252,8 +244,8 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>Here you want to increase the variable i by as much that you can get to the next value you want to print out.</hintMessage>
-            <hintMessage>What's the distance between each number printed out?</hintMessage>
+            <hintMessage>Here you want to set the value by which you want to increase the variable i after each iteration.</hintMessage>
+            <hintMessage>Think of the values you want to print out. What is the distance of one iteration to the next?</hintMessage>
             <hintMessage>Please enter '2' in the highlighted field.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
@@ -263,7 +255,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput3</matcherParameter>
+                        <matcherParameter name="single">input3</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -286,8 +278,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>3</sourceID>
-        <destID>4</destID>
+        <sourceID>18</sourceID>
+        <destID>19</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -295,14 +287,14 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>7</uniqueID>
+            <uniqueID>37</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>505621e4-024d-91fa-a9c1-bb8233fcc8b4</transaction_id>
+                    <transaction_id>6deeb127-e74d-2240-f23f-99f107ae206b</transaction_id>
                     <Selection>
-                        <value>userInput4</value>
+                        <value>input4</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -314,8 +306,8 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>This is the last print statement. What do you think it should print out?</hintMessage>
-            <hintMessage>The numbers have already been printed by the while loop above. What's left?</hintMessage>
+            <hintMessage>This is a single print. What do you want to print out after all the numbers have been printed out?</hintMessage>
+            <hintMessage>Here you want to put in a string.</hintMessage>
             <hintMessage>Please enter '"Goodbye!"' in the highlighted field.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
@@ -325,7 +317,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput4</matcherParameter>
+                        <matcherParameter name="single">input4</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -348,8 +340,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>4</sourceID>
-        <destID>5</destID>
+        <sourceID>19</sourceID>
+        <destID>20</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -357,12 +349,12 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>9</uniqueID>
+            <uniqueID>39</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>e37d312e-ea17-17f8-87a6-662904c95d44</transaction_id>
+                    <transaction_id>dd4207f3-7ec1-7623-1596-ef716af22b9f</transaction_id>
                     <Selection>
                         <value>done</value>
                     </Selection>
@@ -408,8 +400,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>5</sourceID>
-        <destID>6</destID>
+        <sourceID>20</sourceID>
+        <destID>21</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -417,14 +409,14 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>11</uniqueID>
+            <uniqueID>41</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>c24a1005-c2fe-0f48-3918-5f7e78a76454</transaction_id>
+                    <transaction_id>3315dd50-de62-4404-748e-57fca853a38f</transaction_id>
                     <Selection>
-                        <value>userInput1</value>
+                        <value>input1</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -434,7 +426,7 @@
                     </Input>
                 </properties>
             </message>
-            <buggyMessage>This is not correct. Will you print out '10' if you only look for numbers smaller than 10?</buggyMessage>
+            <buggyMessage>If you use '&lt;', you will only include all numbers below 10, but you also want to print out 10!</buggyMessage>
             <successMessage></successMessage>
             <hintMessage>Please enter '&lt;' in the highlighted field.</hintMessage>
             <callbackFn></callbackFn>
@@ -445,7 +437,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput1</matcherParameter>
+                        <matcherParameter name="single">input1</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -469,7 +461,7 @@
             <indicator>-1</indicator>
         </rule>
         <sourceID>1</sourceID>
-        <destID>7</destID>
+        <destID>22</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -477,134 +469,14 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>13</uniqueID>
+            <uniqueID>43</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>aa761d3a-547a-26aa-99e6-a0512acedfb8</transaction_id>
+                    <transaction_id>eec00eb6-34af-b042-fc12-7c5482dab5ce</transaction_id>
                     <Selection>
-                        <value>userInput3</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateTextField</value>
-                    </Action>
-                    <Input>
-                        <value>1</value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>This is not correct. Think of how much you need to reach the next value you want to print out in each step.</buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage>Please enter '1' in the highlighted field.</hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Buggy Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput3</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">1</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>3</sourceID>
-        <destID>8</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>15</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>338f40cc-7652-ae1a-d9db-d11de6f8872e</transaction_id>
-                    <Selection>
-                        <value>userInput4</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateTextField</value>
-                    </Action>
-                    <Input>
-                        <value>Goodbye!</value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>This is not correct. You have to take into consideration, that Goodbye! is a string, and not an integer.</buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage>Please enter 'Goodbye!' in the highlighted field.</hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Buggy Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput4</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">Goodbye!</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>4</sourceID>
-        <destID>9</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>17</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>cde0d9d8-88dc-b22b-3ad4-8cd6c8711e2e</transaction_id>
-                    <Selection>
-                        <value>userInput4</value>
+                        <value>input4</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -616,6 +488,8 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
+            <hintMessage>This is a single print. What do you want to print out after all the numbers have been printed out?</hintMessage>
+            <hintMessage>Here you want to put in a string.</hintMessage>
             <hintMessage>Please enter ''Goodbye!'' in the highlighted field.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
@@ -625,7 +499,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput4</matcherParameter>
+                        <matcherParameter name="single">input4</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -648,8 +522,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>4</sourceID>
-        <destID>10</destID>
+        <sourceID>19</sourceID>
+        <destID>23</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -657,12 +531,12 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>19</uniqueID>
+            <uniqueID>45</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>7154f674-9e25-10ed-d1dd-e5cf9e57bea0</transaction_id>
+                    <transaction_id>8b6b95cc-3695-5d4d-d3b7-6318a1aad13e</transaction_id>
                     <Selection>
                         <value>done</value>
                     </Selection>
@@ -708,8 +582,68 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>10</sourceID>
-        <destID>11</destID>
+        <sourceID>23</sourceID>
+        <destID>24</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>47</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>170212af-8384-68cc-6d06-b99f47fe32a8</transaction_id>
+                    <Selection>
+                        <value>input4</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextField</value>
+                    </Action>
+                    <Input>
+                        <value>Goodbye!</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>Take into consideration that Goodbye! has to be input as a string!</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please enter 'Goodbye!' in the highlighted field.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">input4</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">Goodbye!</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>19</sourceID>
+        <destID>25</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <EdgesGroups ordered="true"></EdgesGroups>
