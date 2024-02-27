@@ -57,12 +57,12 @@ console.log(generateTaskBatch());
 */
 
 //Generate the file names directly
-const topics = ['L'];
+const topics = ['L','V'];
 const difficulties = 2;
 const taskPools = [];
 const randomizedTasks = [];
 const taskAmount = topics.length*difficulties; //amount of tasks to cover every task pool
-const tasksPerPool = 1; //Amount of tasks per task pool
+const tasksPerPool = 3; //Amount of tasks per task pool
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max)
@@ -110,7 +110,8 @@ function loadTask([a,b]){
     return taskLink
 }
 
+
+
 //Testing
-/*generateTaskBatch();
-console.log(randomizedTasks);
-*/
+//generateTaskBatch();
+//console.log(randomizedTasks);
