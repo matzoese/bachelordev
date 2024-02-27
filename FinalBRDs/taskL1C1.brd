@@ -262,7 +262,7 @@
                     </Input>
                 </properties>
             </message>
-            <buggyMessage>This is not correct. Look at the structure of the code, it does not fit the for loop. DO you know any other loop which could work?</buggyMessage>
+            <buggyMessage>This is not correct. Look at the structure of the code, it does not fit the for loop. Do you know any other loop which could work?</buggyMessage>
             <successMessage></successMessage>
             <hintMessage>Please enter 'for' in the highlighted field.</hintMessage>
             <callbackFn></callbackFn>

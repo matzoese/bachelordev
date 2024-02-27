@@ -6,7 +6,7 @@
             <verb>SendNoteProperty</verb>
             <properties>
                 <MessageType>StartProblem</MessageType>
-                <ProblemName>taskV3C2</ProblemName>
+                <ProblemName>taskL3C2</ProblemName>
             </properties>
         </message>
         <message>
@@ -17,10 +17,10 @@
         </message>
     </startNodeMessages>
     <node locked="false" doneState="false">
-        <text>taskV3C2</text>
+        <text>taskL3C2</text>
         <uniqueID>1</uniqueID>
         <dimension>
-            <x>425</x>
+            <x>426</x>
             <y>30</y>
         </dimension>
     </node>
@@ -52,48 +52,56 @@
         <text>state4</text>
         <uniqueID>5</uniqueID>
         <dimension>
-            <x>437</x>
-            <y>470</y>
+            <x>91</x>
+            <y>141</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>state5</text>
         <uniqueID>6</uniqueID>
         <dimension>
-            <x>31</x>
-            <y>135</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state6</text>
-        <uniqueID>7</uniqueID>
-        <dimension>
-            <x>65</x>
-            <y>227</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state7</text>
-        <uniqueID>8</uniqueID>
-        <dimension>
-            <x>33</x>
-            <y>317</y>
+            <x>103</x>
+            <y>235</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>state8</text>
         <uniqueID>9</uniqueID>
         <dimension>
-            <x>11</x>
-            <y>445</y>
+            <x>111</x>
+            <y>333</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state9</text>
+        <uniqueID>10</uniqueID>
+        <dimension>
+            <x>437</x>
+            <y>470</y>
         </dimension>
     </node>
     <node locked="false" doneState="true">
         <text>Done</text>
-        <uniqueID>10</uniqueID>
+        <uniqueID>11</uniqueID>
         <dimension>
             <x>440</x>
             <y>580</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state11</text>
+        <uniqueID>12</uniqueID>
+        <dimension>
+            <x>57</x>
+            <y>591</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state12</text>
+        <uniqueID>13</uniqueID>
+        <dimension>
+            <x>57</x>
+            <y>467</y>
         </dimension>
     </node>
     <edge>
@@ -106,7 +114,7 @@
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>b77b2e64-3cad-5e3a-1af8-88feedbce498</transaction_id>
+                    <transaction_id>c27509db-d045-3310-278a-f1f178094ec5</transaction_id>
                     <Selection>
                         <value>correcta1</value>
                     </Selection>
@@ -120,11 +128,9 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>One of the lines is missing a colon.</hintMessage>
-            <hintMessage>There are 3 wrong lines in total.</hintMessage>
-            <hintMessage>Where is the result of find_max(34,77) stored?</hintMessage>
-            <hintMessage>The variable result is a local variable, only accessible in the function find_max.</hintMessage>
-            <hintMessage>Please check the first, the second to last and last checkbkox of task a.</hintMessage>
+            <hintMessage>Take a look at each line and their indentations.</hintMessage>
+            <hintMessage>After using a for loop, every line that should be executed inside of the loop has to be indented. Otherwise it will just be executed after the loop or output an error.</hintMessage>
+            <hintMessage>Please check each checkbox of task a except for the first one.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -170,7 +176,7 @@
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>dd1db58a-4ebf-e1d7-58ea-34149372813a</transaction_id>
+                    <transaction_id>0c843ee7-a647-3c50-37c2-1f30c975344e</transaction_id>
                     <Selection>
                         <value>correcta2</value>
                     </Selection>
@@ -184,11 +190,9 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>One of the lines is missing a colon.</hintMessage>
-            <hintMessage>There are 3 wrong lines in total.</hintMessage>
-            <hintMessage>Where is the result of find_max(34,77) stored?</hintMessage>
-            <hintMessage>The variable result is a local variable, only accessible in the function find_max.</hintMessage>
-            <hintMessage>Please check the first, the second to last and last checkbkox of task a.</hintMessage>
+            <hintMessage>Take a look at each line and their indentations.</hintMessage>
+            <hintMessage>After using a for loop, every line that should be executed inside of the loop has to be indented. Otherwise it will just be executed after the loop or output an error.</hintMessage>
+            <hintMessage>Please check each checkbox of task a except for the first one.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -234,7 +238,7 @@
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>658c3163-e2fb-ec39-eeb1-953763c5ae3a</transaction_id>
+                    <transaction_id>5c2e8c54-f7e1-e7ab-cf7c-17fedf3a77fa</transaction_id>
                     <Selection>
                         <value>correcta3</value>
                     </Selection>
@@ -248,11 +252,9 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>One of the lines is missing a colon.</hintMessage>
-            <hintMessage>There are 3 wrong lines in total.</hintMessage>
-            <hintMessage>Where is the result of find_max(34,77) stored?</hintMessage>
-            <hintMessage>The variable result is a local variable, only accessible in the function find_max.</hintMessage>
-            <hintMessage>Please check the first, the second to last and last checkbkox of task a.</hintMessage>
+            <hintMessage>Take a look at each line and their indentations.</hintMessage>
+            <hintMessage>After using a for loop, every line that should be executed inside of the loop has to be indented. Otherwise it will just be executed after the loop or output an error.</hintMessage>
+            <hintMessage>Please check each checkbox of task a except for the first one.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -289,16 +291,196 @@
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>7</uniqueID>
+            <uniqueID>10</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>e7adbbb9-3c1e-b904-5b71-654a507003ad</transaction_id>
+                    <transaction_id>005ac392-ad30-25c4-0f37-c36d14fdb2c2</transaction_id>
+                    <Selection>
+                        <value>falsea1</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateCheckBox</value>
+                    </Action>
+                    <Input>
+                        <value>falseboxa1_check: true</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>This line is already correct. Look at the other lines and their indentations.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please provide your answer 'falseboxa1_check: true' in the highlighted element.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">falsea1</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateCheckBox</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">falseboxa1_check: true</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>1</sourceID>
+        <destID>5</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>12</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>82f7edaf-a520-e9cc-990a-d18d04b5db34</transaction_id>
+                    <Selection>
+                        <value>falsea1</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateCheckBox</value>
+                    </Action>
+                    <Input>
+                        <value>falseboxa1_check: true</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>This line is already correct. Look at the other lines and their indentations.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please provide your answer 'falseboxa1_check: true' in the highlighted element.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">falsea1</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateCheckBox</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">falseboxa1_check: true</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>2</sourceID>
+        <destID>6</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>20</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>92eb0ea7-b29f-2150-b6f1-b2f6e87bd119</transaction_id>
+                    <Selection>
+                        <value>falsea1</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateCheckBox</value>
+                    </Action>
+                    <Input>
+                        <value>falseboxa1_check: true</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>This line is already correct. Look at the other lines and their indentations.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please provide your answer 'falseboxa1_check: true' in the highlighted element.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">falsea1</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateCheckBox</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">falseboxa1_check: true</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>3</sourceID>
+        <destID>9</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>22</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>724ded4b-e228-7e85-2b03-92e7e04966ea</transaction_id>
                     <Selection>
                         <value>correctb1</value>
                     </Selection>
@@ -312,9 +494,10 @@
             </message>
             <buggyMessage>No, this is not correct.</buggyMessage>
             <successMessage></successMessage>
-            <hintMessage>Look for missing brackets, parameters or colons.</hintMessage>
-            <hintMessage>In one of the codes there is a colon missing. Which one?</hintMessage>
-            <hintMessage>Please check the checkbox on the left.</hintMessage>
+            <hintMessage>Look at the indentations. Some of them are wrong.</hintMessage>
+            <hintMessage>Some of the codes have colons missing.</hintMessage>
+            <hintMessage>Some of the functions have a wrong amount of parameters.</hintMessage>
+            <hintMessage>Please check the top right checkbox of task b.</hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -347,247 +530,7 @@
             <indicator>-1</indicator>
         </rule>
         <sourceID>4</sourceID>
-        <destID>5</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>12</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>a2808637-7917-523b-c3e6-f7038a61a1d4</transaction_id>
-                    <Selection>
-                        <value>falsea1</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateCheckBox</value>
-                    </Action>
-                    <Input>
-                        <value>falseboxa1_check: true</value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>This line is already correct. Look for missing parameters, variables or general code.</buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage>Please provide your answer 'falseboxa1_check: true' in the highlighted element.</hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Buggy Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>WildcardMatcher</matcherType>
-                        <matcherParameter name="single">falsea.*</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateCheckBox</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>WildcardMatcher</matcherType>
-                        <matcherParameter name="single">falseboxa.*_check: true</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>1</sourceID>
-        <destID>6</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>15</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>10f1627d-bf0b-1401-1f17-46f2c7376e68</transaction_id>
-                    <Selection>
-                        <value>falsea1</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateCheckBox</value>
-                    </Action>
-                    <Input>
-                        <value>falseboxa1_check: true</value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>This line is already correct. Look for missing parameters, variables or general code.</buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage>Please provide your answer 'falseboxa1_check: true' in the highlighted element.</hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Buggy Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>WildcardMatcher</matcherType>
-                        <matcherParameter name="single">falsea.*</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateCheckBox</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>WildcardMatcher</matcherType>
-                        <matcherParameter name="single">falseboxa.*_check: true</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>2</sourceID>
-        <destID>7</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>18</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>ca4997c0-3c26-bd68-81bb-56d9a79f9f69</transaction_id>
-                    <Selection>
-                        <value>falsea6</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateCheckBox</value>
-                    </Action>
-                    <Input>
-                        <value>falseboxa6_check: true</value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>This line is already correct. Look for missing parameters, variables or general code.</buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage>Please provide your answer 'falseboxa6_check: true' in the highlighted element.</hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Buggy Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>WildcardMatcher</matcherType>
-                        <matcherParameter name="single">falsea.*</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateCheckBox</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>WildcardMatcher</matcherType>
-                        <matcherParameter name="single">falseboxa.*_check: true</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>3</sourceID>
-        <destID>8</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>21</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>aa583e03-f01e-4360-e578-490e1ec481b3</transaction_id>
-                    <Selection>
-                        <value>falseb1</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateCheckBox</value>
-                    </Action>
-                    <Input>
-                        <value>falseboxb1_check: true</value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>This is not the correct code. The colon behind the function definition is missing.</buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage>Please provide your answer 'falseboxb1_check: true' in the highlighted element.</hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Buggy Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">falseb1</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateCheckBox</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">falseboxb1_check: true</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>4</sourceID>
-        <destID>9</destID>
+        <destID>10</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -595,12 +538,12 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>23</uniqueID>
+            <uniqueID>24</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>a9b6b832-2a23-3e6f-ed69-55f59a4dfeee</transaction_id>
+                    <transaction_id>18d78cc5-4513-12d4-e31f-3a127e9e0c26</transaction_id>
                     <Selection>
                         <value>done</value>
                     </Selection>
@@ -646,8 +589,128 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>5</sourceID>
-        <destID>10</destID>
+        <sourceID>10</sourceID>
+        <destID>11</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>26</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>c6c59015-e166-06ea-9cb5-3b0fb87b9a9b</transaction_id>
+                    <Selection>
+                        <value>falseb2</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateCheckBox</value>
+                    </Action>
+                    <Input>
+                        <value>falseboxb2_check: true</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>You already selected the correct code. Please click on done.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please provide your answer 'falseboxb2_check: true' in the highlighted element.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>WildcardMatcher</matcherType>
+                        <matcherParameter name="single">falseb.*</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateCheckBox</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>WildcardMatcher</matcherType>
+                        <matcherParameter name="single">falseboxb.*_check: true</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>10</sourceID>
+        <destID>12</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>29</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>791bfdfc-cfb4-8471-e350-58b54550cf9d</transaction_id>
+                    <Selection>
+                        <value>falseb1</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateCheckBox</value>
+                    </Action>
+                    <Input>
+                        <value>falseboxb1_check: true</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>This code is not correct. Take a look at the other ones.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Please provide your answer 'falseboxb1_check: true' in the highlighted element.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>WildcardMatcher</matcherType>
+                        <matcherParameter name="single">falseb.*</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateCheckBox</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>WildcardMatcher</matcherType>
+                        <matcherParameter name="single">falseboxb.*_check: true</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>4</sourceID>
+        <destID>13</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <EdgesGroups ordered="true"></EdgesGroups>

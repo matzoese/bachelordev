@@ -52,7 +52,7 @@
                     <MessageType>InterfaceAction</MessageType>
                     <transaction_id>0ee109ec-b593-7fd1-b1cb-00902b60f9e0</transaction_id>
                     <Selection>
-                        <value>textInput1</value>
+                        <value>input1</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -75,7 +75,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">textInput1</matcherParameter>
+                        <matcherParameter name="single">input1</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>

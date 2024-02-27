@@ -25,43 +25,43 @@
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state1</text>
-        <uniqueID>2</uniqueID>
+        <text>state6</text>
+        <uniqueID>7</uniqueID>
         <dimension>
-            <x>357</x>
-            <y>140</y>
+            <x>623</x>
+            <y>143</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state2</text>
-        <uniqueID>3</uniqueID>
+        <text>state7</text>
+        <uniqueID>8</uniqueID>
         <dimension>
-            <x>357</x>
-            <y>250</y>
+            <x>433</x>
+            <y>245</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state3</text>
-        <uniqueID>4</uniqueID>
+        <text>state8</text>
+        <uniqueID>9</uniqueID>
         <dimension>
-            <x>357</x>
-            <y>360</y>
+            <x>433</x>
+            <y>355</y>
         </dimension>
     </node>
     <node locked="false" doneState="true">
-        <text>Done</text>
-        <uniqueID>5</uniqueID>
+        <text>Done_2</text>
+        <uniqueID>10</uniqueID>
         <dimension>
-            <x>360</x>
-            <y>470</y>
+            <x>428</x>
+            <y>465</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state5</text>
-        <uniqueID>6</uniqueID>
+        <text>state10</text>
+        <uniqueID>11</uniqueID>
         <dimension>
-            <x>59</x>
-            <y>131</y>
+            <x>341</x>
+            <y>134</y>
         </dimension>
     </node>
     <edge>
@@ -69,14 +69,14 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>1</uniqueID>
+            <uniqueID>11</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>91a8d6b1-1535-bb33-5ff8-3f652d8f7dc9</transaction_id>
+                    <transaction_id>96bed02f-88dd-204c-27c4-75b72272d602</transaction_id>
                     <Selection>
-                        <value>textInput1</value>
+                        <value>input1</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -99,7 +99,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">textInput1</matcherParameter>
+                        <matcherParameter name="single">input1</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -123,7 +123,7 @@
             <indicator>-1</indicator>
         </rule>
         <sourceID>1</sourceID>
-        <destID>2</destID>
+        <destID>7</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -131,14 +131,14 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>3</uniqueID>
+            <uniqueID>13</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>d5783596-25b3-e0f5-c2b2-845d31456dbc</transaction_id>
+                    <transaction_id>5716383b-bf1f-bad2-457c-ae5c6fe4f750</transaction_id>
                     <Selection>
-                        <value>textInput2</value>
+                        <value>input2</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -161,7 +161,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">textInput2</matcherParameter>
+                        <matcherParameter name="single">input2</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -184,8 +184,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>2</sourceID>
-        <destID>3</destID>
+        <sourceID>7</sourceID>
+        <destID>8</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -193,14 +193,14 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>5</uniqueID>
+            <uniqueID>15</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>0d394711-a6bc-6148-6886-06bde77ec942</transaction_id>
+                    <transaction_id>5ef3a391-010e-4b46-1979-aa3b20fd929d</transaction_id>
                     <Selection>
-                        <value>textInput3</value>
+                        <value>input3</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -222,7 +222,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">textInput3</matcherParameter>
+                        <matcherParameter name="single">input3</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -245,8 +245,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>3</sourceID>
-        <destID>4</destID>
+        <sourceID>8</sourceID>
+        <destID>9</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -254,12 +254,12 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>7</uniqueID>
+            <uniqueID>17</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>c1f330fc-492a-26c7-3945-263167e0c959</transaction_id>
+                    <transaction_id>970b9b4a-92c7-13c4-0578-702e422499c9</transaction_id>
                     <Selection>
                         <value>done</value>
                     </Selection>
@@ -305,8 +305,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>4</sourceID>
-        <destID>5</destID>
+        <sourceID>9</sourceID>
+        <destID>10</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -314,14 +314,14 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>9</uniqueID>
+            <uniqueID>19</uniqueID>
             <message>
                 <verb>NotePropertySet</verb>
                 <properties>
                     <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>2bb14b6d-e83f-40f7-1413-166c932feab1</transaction_id>
+                    <transaction_id>e3e23f28-7f2e-3def-0d37-4bd4422a9fc1</transaction_id>
                     <Selection>
-                        <value>textInput1</value>
+                        <value>input1</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -342,7 +342,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">textInput1</matcherParameter>
+                        <matcherParameter name="single">input1</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -366,7 +366,7 @@
             <indicator>-1</indicator>
         </rule>
         <sourceID>1</sourceID>
-        <destID>6</destID>
+        <destID>11</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <EdgesGroups ordered="true"></EdgesGroups>

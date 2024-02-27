@@ -100,7 +100,7 @@
                     <MessageType>InterfaceAction</MessageType>
                     <transaction_id>10da0d58-f442-7ff2-140f-d8da4aa47917</transaction_id>
                     <Selection>
-                        <value>userInput1</value>
+                        <value>input1</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -123,7 +123,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput1</matcherParameter>
+                        <matcherParameter name="single">input1</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -162,7 +162,7 @@
                     <MessageType>InterfaceAction</MessageType>
                     <transaction_id>51e7f36a-56a0-9114-b068-39e9f0eb6f49</transaction_id>
                     <Selection>
-                        <value>userInput2</value>
+                        <value>input2</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -185,7 +185,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput2</matcherParameter>
+                        <matcherParameter name="single">input2</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -224,7 +224,7 @@
                     <MessageType>InterfaceAction</MessageType>
                     <transaction_id>b9cc1e4f-e14d-db56-aaca-364b0f4b2de8</transaction_id>
                     <Selection>
-                        <value>userInput3</value>
+                        <value>input3</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -247,7 +247,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput3</matcherParameter>
+                        <matcherParameter name="single">input3</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -286,7 +286,7 @@
                     <MessageType>InterfaceAction</MessageType>
                     <transaction_id>0b2a5fb8-6f5f-61e8-5b99-5db4d71f18eb</transaction_id>
                     <Selection>
-                        <value>userInput4</value>
+                        <value>input4</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -309,7 +309,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput4</matcherParameter>
+                        <matcherParameter name="single">input4</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -348,7 +348,7 @@
                     <MessageType>InterfaceAction</MessageType>
                     <transaction_id>27dbc28e-6559-3c2a-01f7-276c5beea9d9</transaction_id>
                     <Selection>
-                        <value>userInput5</value>
+                        <value>input5</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -371,7 +371,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput5</matcherParameter>
+                        <matcherParameter name="single">input5</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -410,7 +410,7 @@
                     <MessageType>InterfaceAction</MessageType>
                     <transaction_id>496c65b7-e8a8-20e5-191a-a9b8cbfecdad</transaction_id>
                     <Selection>
-                        <value>userInput5</value>
+                        <value>input5</value>
                     </Selection>
                     <Action>
                         <value>UpdateTextField</value>
@@ -433,7 +433,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">userInput5</matcherParameter>
+                        <matcherParameter name="single">input5</matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
