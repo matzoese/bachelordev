@@ -126,7 +126,12 @@ Finally, add this script in the body section below all of the ctat content:
     } 
 </script>
 
-(Step x: adapt randomization (for more task pools))
+In the end, you will have to adapt some variables in the randomization file:
+-topics: Please add the name of your topic into the array (how you named the topic in your file names)
+-difficulties: If you added another difficulty to all topics, please increment the difficulties variable
+-tasksPerPool: If you have more tasks in each task pool, please increment tasksPerPool to the number of tasks
+
+Take into consideration that each task pool has to have the same amount of tasks for the randomization to work.
 
 If you followed all the steps correctly, your task should now be loaded into the tutor. If you still have
 some problems with the html file, compare your file to the ones that are already defined, maybe you will
