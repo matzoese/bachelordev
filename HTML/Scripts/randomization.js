@@ -77,10 +77,10 @@ function generateTaskPools(){
         }
     }
 }
-generateTaskPools();
 
 //This function returns a random task pool which has not been generated yet (e.g [V, C0])
 function generateRandomizedTaskPool(){
+    generateTaskPools();
     let x = getRandomInt(taskAmount)
     for(let i=0; i<randomizedTasks.length;i++){
         if (randomizedTasks[i]==taskPools[x]){
