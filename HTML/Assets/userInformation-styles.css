@@ -1,24 +1,6 @@
 
 
-        .silex-id-1704289853284-0 {top: 40px; left: 40px; height: 40px; width: 320px; font-size: 20px;
-        }
         .body-initial {background-color: rgb(255, 255, 255); text-align: center;
-        }
-        .silex-id-1704290259918-6 {top: 180px; left: 20px; height: 20px; width: 340px; text-align: left;
-        }
-        .silex-id-1704289926997-1 {top: 100px; left: 20px; height: 20px; width: 340px; text-align: left;
-        }
-        .silex-id-1704290314329-12 {top: 220px; left: 60px; height: 20px; width: 300px; text-align: left;
-        }
-        .silex-id-1704290327455-13 {top: 260px; left: 60px; height: 20px; width: 300px; text-align: left;
-        }
-        .silex-id-1704290357434-15 {top: 300px; left: 60px; height: 20px; width: 300px; text-align: left;
-        }
-        .silex-id-1704290371294-16 {top: 340px; left: 60px; height: 20px; width: 300px; text-align: left;
-        }
-        .silex-id-1704290385466-17 {top: 380px; left: 60px; height: 20px; width: 60px; text-align: left;
-        }
-        .silex-id-1704290402592-18 {top: 380px; left: 140px; height: 1.4em; width: 220px;
         }
         .silex-id-1704290307302-11 {top: 380px; left: 20px; height: 20px; width: 20px;
         }
@@ -30,14 +12,46 @@
         }
         .silex-id-1704292480157-20 {top: 220px; left: 20px; height: 20px; width: 20px;
         }
-        .silex-id-1704290166981-5 {top: 140px; left: 20px; height: 20px; width: 180px;
-        }
         .background-initial {background-color: rgb(255, 255, 255); top: 20px; left: 180px; width: 400px; height: 580px;
         }
         .silex-id-1704290418223-19 {top: 500px; left: 160px; height: 64px; width: 64px;
         }
         .silex-id-1709074656362-4 {top: 460px; left: 20px; height: 1.4em; width: 200px;
         }
-        .silex-id-1709074559296-0 {top: 420px; left: 20px; height: 20px; width: 340px; text-align: left;
+        .silex-id-1704290166981-5 > select {font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .silex-id-1704290295078-8 > label {font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .silex-id-1704290299992-9 > label {font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .silex-id-1704290301193-10 > label {font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .silex-id-1704290307302-11 > label {font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .silex-id-1704290314329-12 {top: 220px; left: 60px; height: 20px; width: 300px; text-align: left; font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .silex-id-1704290327455-13 {top: 260px; left: 60px; height: 20px; width: 300px; text-align: left; font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .silex-id-1704290357434-15 {top: 300px; left: 60px; height: 20px; width: 300px; text-align: left; font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .silex-id-1704290371294-16 {top: 340px; left: 60px; height: 20px; width: 300px; text-align: left; font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .silex-id-1704290385466-17 {top: 380px; left: 60px; height: 20px; width: 60px; text-align: left; font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .silex-id-1704290402592-18 {top: 380px; left: 140px; height: 1.4em; width: 220px; font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .silex-id-1704292480157-20 > label {font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .silex-id-1709074656362-4 > select {font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .silex-id-1704290166981-5 {top: 140px; left: 20px; height: 20px; width: 180px;
+        }
+        .silex-id-1704289853284-0 {top: 40px; left: 40px; height: 40px; width: 320px; font-size: 18px; font-weight: bold; font-family: Tahoma, Geneva, sans-serif; border-width: 2px; border-style: solid;
+        }
+        .silex-id-1704289926997-1 {top: 100px; left: 20px; height: 20px; width: 340px; text-align: left; font-weight: bold; font-family: "Trebuchet MS", Helvetica, sans-serif; border-width: 1px; border-style: solid;
+        }
+        .silex-id-1704290259918-6 {top: 180px; left: 20px; height: 20px; width: 340px; text-align: left; font-family: "Trebuchet MS", Helvetica, sans-serif; font-weight: bold; border-width: 1px; border-style: solid;
+        }
+        .silex-id-1709074559296-0 {top: 420px; left: 20px; height: 20px; width: 340px; text-align: left; font-family: "Trebuchet MS", Helvetica, sans-serif; font-weight: bold; border-width: 1px; border-style: solid;
         }
     
