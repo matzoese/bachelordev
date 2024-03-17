@@ -146,19 +146,7 @@
             </table>
         </div>
 
-<script>
-    // update progress bar
-    let taskArray_deserialized = JSON.parse(sessionStorage.getItem("taskArray"));
 
-    if(taskArray_deserialized.length>1){
-        document.getElementById("progress").innerHTML = "You have "+taskArray_deserialized.length+" more tasks left";
-    }else if(taskArray_deserialized.length==1){
-        document.getElementById("progress").innerHTML = "You have "+taskArray_deserialized.length+" more task left";
-    }   
-    else{
-        document.getElementById("progress").innerHTML = "This is your last task!";
-    } 
-</script>
 
 
 
@@ -184,7 +172,19 @@
     </div>
 
 
+<script>
+    // update progress bar
+    let taskArray_deserialized = JSON.parse(sessionStorage.getItem("taskArray"));
 
+    if(taskArray_deserialized.length>1){
+        document.getElementById("progress").innerHTML = "You have "+taskArray_deserialized.length+" more tasks left";
+    }else if(taskArray_deserialized.length==1){
+        document.getElementById("progress").innerHTML = "You have "+taskArray_deserialized.length+" more task left";
+    }   
+    else{
+        document.getElementById("progress").innerHTML = "This is your last task!";
+    } 
+</script>
 
 
 

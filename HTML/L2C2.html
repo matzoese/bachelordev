@@ -149,19 +149,7 @@
             </table>
         </div>
 
-<script>
-    // update progress bar
-    let taskArray_deserialized = JSON.parse(sessionStorage.getItem("taskArray"));
 
-    if(taskArray_deserialized.length>1){
-        document.getElementById("progress").innerHTML = "You have "+taskArray_deserialized.length+" more tasks left";
-    }else if(taskArray_deserialized.length==1){
-        document.getElementById("progress").innerHTML = "You have "+taskArray_deserialized.length+" more task left";
-    }   
-    else{
-        document.getElementById("progress").innerHTML = "This is your last task!";
-    } 
-</script>
 
 
 
@@ -198,8 +186,19 @@
         <div data-silex-type="text" class="CTATTextField editable-style silex-id-1706615502195-34 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1706615502195-34" id="code8" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true" contenteditable="false">)</div>
     </div>
 
+<script>
+    // update progress bar
+    let taskArray_deserialized = JSON.parse(sessionStorage.getItem("taskArray"));
 
-
+    if(taskArray_deserialized.length>1){
+        document.getElementById("progress").innerHTML = "You have "+taskArray_deserialized.length+" more tasks left";
+    }else if(taskArray_deserialized.length==1){
+        document.getElementById("progress").innerHTML = "You have "+taskArray_deserialized.length+" more task left";
+    }   
+    else{
+        document.getElementById("progress").innerHTML = "This is your last task!";
+    } 
+</script>
 
 
 
